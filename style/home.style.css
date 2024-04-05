@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: hsl(var(--background-foreground));
+  }
+  
+  main {
+    width: 100%;
+    min-height: 100vh;
+    display: inline-flex;
+    background-color: hsl(var(--background));
+  }
+  
+  #auth-hero {
+    max-width: 100%; 
+    position: relative;
+    display: block; 
+  }
+  
+  #auth-hero .background {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  #auth-hero .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 2rem;
+    color: hsl(var(--primary-foreground));
+    background-color: hsla(var(--primary), 0.7);
+    border-radius: 15px; 
+  }
+  
+  
+  #auth-hero .content .title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.6;
+  }
+  
+  #auth-hero .content .description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: hsl(var(--secondary)); 
+    color: hsl(var(--secondary-foreground));
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    
+  }
+  
+  .btn:hover {
+    background-color: hsl(var(--secondary-darkened));
+  }
+
+ /* sytle Button */
+ .button {
+  --color: #00A97F;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+ }
+ 
+ .button::before, .button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ 
+ .button::before {
+  top: -1em;
+  left: -1em;
+ }
+ 
+ .button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ 
+ .button:hover::before, .button:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ 
+ .button:hover {
+  color: rgb(10, 25, 30);
+ }
+ 
+ .button:active {
+  filter: brightness(.8);
+ }
+ 
